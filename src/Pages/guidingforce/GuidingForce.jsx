@@ -1,9 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import "./guiding.css";
-import Pic1 from '..//..//assets/images/guiding/pic1.png'
-import Pic2 from '..//..//assets/images/guiding/pic2.jpg'
-import ImgBanner from '..//..//assets/images/guiding/newImg2.png'
+import Office1Img from "../../assets/images/office/office1.png";
+import Office2Img from "../../assets/images/office/office2.jpg";
+import ImgBanner from "../../assets/images/guiding/newImg2.png";
 
 
 
@@ -36,34 +37,34 @@ const GuidingForce = () => {
           
           {/* CARD 1 */}
           <div className="col-md-6 col-lg-5">
-            <div className="leader-card">
+            <Link to="/office-1" className="leader-card link-unstyled">
               <img
-                src="https://images.pexels.com/photos/8430298/pexels-photo-8430298.jpeg"
-                alt="Nitin Paranjpe"
+                src={Office1Img}
+                alt="Office leadership feature"
                 className="leader-img"
               />
               <div className="leader-info">
-                <h4 className="leader-name">Name</h4>
-                <p className="leader-role">Non-Executive Chairman</p>
+                <h4 className="leader-name">Guiding Force</h4>
+                <p className="leader-role">Leadership Feature</p>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* CARD 2 */}
           <div className="col-md-6 col-lg-5">
-            <div className="leader-card">
+            <Link to="/office-2" className="leader-card link-unstyled">
               <img
-                src="https://images.pexels.com/photos/7947713/pexels-photo-7947713.jpeg"
-                alt="Priya Nair"
+                src={Office2Img}
+                alt="Executive leadership feature"
                 className="leader-img"
               />
               <div className="leader-info darker">
-                <h4 className="leader-name underline">Priya Nair</h4>
+                <h4 className="leader-name">Leadership Spotlight</h4>
                 <p className="leader-role">
-                  Chief Executive Officer & Managing Director
+                  Executive Leadership Feature
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
 
         </div>

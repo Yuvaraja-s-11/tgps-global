@@ -9,13 +9,6 @@ const News3 = () => {
   return (
     <>
     <section className="IBM-font">
-      {/* BREADCRUMB BAR */}
-      <div className="breadcrumb-bar">
-        <div className="container py-2">
-          <Link to="/" className="text-white"><span style={{fontSize:"15px"}}>Home</span></Link>
-          <span>›</span>
-        </div>
-      </div>
 
       {/* HERO SECTION */}
       <section className="press-hero">
@@ -23,22 +16,19 @@ const News3 = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8">
 
-              <h1 className="press-title">
-                Leadership is not about power—it’s about building systems that empower the future
-              </h1>
+              <div className="press-card">
+                <h1 className="press-title">
+                  Leadership is not about power - it is about building systems that empower the future
+                </h1>
 
-            
+                <div className="press-image">
+                  <img
+                    src={Office1}
+                    alt="Leadership at TGPS Global"
+                  />
+                </div>
 
-
-              <div className="press-image">
-                <img
-                  src={Office1}
-                  alt="tgps-news"
-                  
-                />
-              </div>
-
-              <div className="press-content">
+                <div className="press-content">
                 <p>
                   Every transformative organization is shaped by a singular force—a vision strong enough to challenge convention, and leadership courageous enough to build what does not yet exist. At TGPS Global, that force is Mr. MK., Founder, Chairman & Managing Director.
                 </p>
@@ -110,6 +100,7 @@ const News3 = () => {
                 </p>
 
                 <hr />
+              </div>
               </div>
 
             </div>

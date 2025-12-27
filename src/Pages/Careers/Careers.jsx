@@ -218,9 +218,9 @@ const Careers = () => {
     We’re always looking for talented individuals — share your resume and
     we’ll get in touch.
   </p>
-  <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
-    Send Resume
-  </button>
+  <h6 className="px-4 fw-bold">
+    Write Us
+  </h6>
   <p>To : <a href="">info@tgpsglobal.com</a></p>
 </section>
 
