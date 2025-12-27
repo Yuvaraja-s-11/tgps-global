@@ -159,7 +159,7 @@ const AboutUs = () => {
 
       <div style={{ backgroundColor: '#77DDF5' }}>
         <div className="text center-section py-5">
-          <p className="text-p">Partnering the World’s Clean Energy Transformation</p>
+          <p className="text-p text-center">Partnering the World’s Clean Energy Transformation</p>
           <p>TGPS Global is a pioneering renewable energy and clean-tech company, committed to shaping a smarter, cleaner and more sustainable planet. Since our inception, we have been driven by a simple belief “what is good for the world is good for TGPS”. Today, we deliver advanced solar solutions, EV infrastructure, EV fleet management systems and blockchain-integrated energy technologies to industries, communities and enterprises across the globe.
           </p>
           <p>With a diverse portfolio and a strong capability ecosystem, we serve a rapidly growing global market demanding reliable, intelligent and sustainable energy systems. Our solutions are engineered to meet evolving expectations from smart solar deployments and clean mobility to next-generation digital energy platforms that support decentralization and transparency.
