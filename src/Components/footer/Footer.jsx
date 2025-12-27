@@ -83,7 +83,7 @@ const Footer = () => {
       {/* Bottom Blue Footer */}
       <div
         className="bg-primary text-white "
-        style={{ fontSize: "0.95rem",padding: "100px 0"  }}
+        style={{ fontSize: "0.95rem", padding: "48px 0" }}
       >
         <div className="container text-center text-md-start">
           <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-start gap-3 mb-4 pb-3">

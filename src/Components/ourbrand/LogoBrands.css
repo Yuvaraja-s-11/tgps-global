@@ -2,7 +2,7 @@
 .cinematic-wrapper {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
   overflow: hidden;
 }
 
@@ -184,7 +184,7 @@
 /* iPad Mini / iPad Air — Reduce Height */
 @media (min-width: 768px) and (max-width: 1024px) {
   .cinematic-wrapper {
-    min-height: 70vh;      /* Reduced height */
+    min-height: 65vh;      /* Reduced height */
   }
 }
 
@@ -206,7 +206,6 @@
 
 @media (max-height: 900px) and (min-width: 600px) {
   .cinematic-wrapper {
-    min-height: 85vh;
+    min-height: 70vh;
   }
 }
-

@@ -126,21 +126,6 @@ India Technology News
   </div>
 </section>
 
-{/* NORMAL SCROLL SECTION */}
-<section className="after-hero py-5">
-  <div className="container">
-    <h2></h2>
-    <p>
-      
-    </p>
-    <p style={{ height: "100vh" }}>
-      
-    </p>
-  </div>
-</section>
-
-
-
                             {/* SECTION ------- 4 */}
 
                   <section className="fragrance-section">

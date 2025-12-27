@@ -50,14 +50,14 @@ const Contact = () => {
             fontSize: "2rem",
           
           }} >
-            We’d love to hear from you! Let’s start a conversation.
+            We'd love to hear from you! Let's start a conversation.
           </p>
         </div>
       </section>
 
       <GlobalPresence />
 {/* 
-      🌍 Our Global Presence */}
+      Our Global Presence */}
        {/* <section
       className="py-5"
       style={{
@@ -161,7 +161,7 @@ const Contact = () => {
           Contact Info
         </h2>
         <p className="text-muted mb-5" style={{ fontSize: "1.1rem" }}>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consequuntur adipisci ad temporibus magnam reiciendis?
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consequuntur adipisci ad temporibus magnam reiciendis'
         </p>
 
         <div
@@ -348,7 +348,7 @@ const Contact = () => {
                   type="submit"
                   className="btn bg-info text-white sharp-btn px-5 py-2 fw-semibold"
                 >
-                  Send Message →
+                  Send Message &gt;
                 </button>
               </div>
             </div>
@@ -372,9 +372,9 @@ const Contact = () => {
     
   }}
 >
-  <h3 className="fw-bold mb-3">Let’s Work Together</h3>
+  <h3 className="fw-bold mb-3">Let's Work Together</h3>
   <p className="mb-4">
-    Have a project in mind or just want to say hello? Drop us a line!
+    Have a project in mind or just want to say hello' Drop us a line!
   </p>
   <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
     Start a Conversation

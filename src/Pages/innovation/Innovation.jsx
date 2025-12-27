@@ -267,19 +267,6 @@ const InnovationHub = () => {
 </section>
 
 
-{/* NORMAL SCROLL SECTION */}
-<section className="after-hero py-5">
-  <div className="container">
-    <h2></h2>
-    <p>
-      
-    </p>
-    <p style={{ height: "100vh" }}>
-      
-    </p>
-  </div>
-</section>
-
                          {/* SECTION ------ 5 */}
 
     <section className="container-fluid bg-white">
