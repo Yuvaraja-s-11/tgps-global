@@ -26,3 +26,30 @@
   background-color: #005EFF;
   color: #ffffff;
 }
+
+.news-link {
+  color: #f8d76a;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f8d76a;
+  text-underline-offset: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.news-link:hover {
+  color: #fff7d6;
+  text-shadow: 0 4px 12px rgba(248, 215, 106, 0.45);
+}
+
+.news-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.news-link-wrapper:hover {
+  color: inherit;
+  text-decoration: none;
+}

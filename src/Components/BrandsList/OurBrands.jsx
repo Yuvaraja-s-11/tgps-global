@@ -16,7 +16,7 @@ import ClifChat from '../../assets/images/Thegroup/clifchat.png'
 const  OurBrands= () => {
   return (
     <section className="brand-section py-5">
-      <h1 className="text-center fw-bold mb-4 font" style={{color:'#1F36C7'}}>Our Brand</h1>
+      <h1 className="text-center fw-bold mb-4 font" style={{color:'#1F36C7'}}>Our Brands</h1>
       <div className="container position-relative">
 
                           {/* box----1 */}

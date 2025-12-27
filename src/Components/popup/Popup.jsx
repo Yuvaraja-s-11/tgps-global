@@ -37,41 +37,42 @@ const EnergySection = () => {
             <div className="row g-4">
               
               {/* CARD 1 */}
-             
               <div className="col-md-6">
-                <Link to="/guiding-force">
-                <div className="energy-card">
-                  <img
-                    src={Popup1}
-                    alt="Green Carpet"
-                    className="energy-img"
-                  />
-                  <div className="energy-card-body">
-                    <h5 className="card-title">Guiding Force</h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                <Link to="/guiding-force" style={{ textDecoration: "none" }}>
+                  <div className="energy-card">
+                    <img
+                      src={Popup1}
+                      alt="Green Carpet"
+                      className="energy-img"
+                    />
+                    <div className="energy-card-body">
+                      <h5 className="card-title">Guiding Force</h5>
+                      <p className="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
                   </div>
-                </div>
                 </Link>
               </div>
              
 
               {/* CARD 2 */}
               <div className="col-md-6">
-                <div className="energy-card">
-                  <img
-                    src={Popup2}
-                    alt="Ideology"
-                    className="energy-img"
-                  />
-                  <div className="energy-card-body">
-                    <h5 className="card-title">Innovation Hub</h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                <Link to="/innovation-hub" style={{ textDecoration: "none" }}>
+                  <div className="energy-card">
+                    <img
+                      src={Popup2}
+                      alt="Ideology"
+                      className="energy-img"
+                    />
+                    <div className="energy-card-body">
+                      <h5 className="card-title">Innovation Hub</h5>
+                      <p className="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
 
             </div>

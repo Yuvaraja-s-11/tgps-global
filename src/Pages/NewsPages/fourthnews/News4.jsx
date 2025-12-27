@@ -8,13 +8,7 @@ const News4 = () => {
   return (
     <>
     <section className="IBM-font">
-      {/* BREADCRUMB BAR */}
-      <div className="breadcrumb-bar">
-        <div className="container py-2">
-          <Link to="/" className="text-white"><span style={{fontSize:"15px"}}>Home</span></Link>
-          <span>›</span>
-        </div>
-      </div>
+
 
       {/* HERO SECTION */}
       <section className="press-hero">

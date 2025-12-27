@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Playbook.css";
-
+ // spaces
 const OurPlayBook = () => {
   const sections = [
     {

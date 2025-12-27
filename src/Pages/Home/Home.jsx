@@ -1,5 +1,5 @@
 
-import React from 'react' 
+import React, { useEffect, useState } from 'react' 
 import "./Home.css";
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
@@ -34,6 +34,54 @@ const Home = () => {
     "https://upload.wikimedia.org/wikipedia/commons/2/24/Honda_logo.svg",
     
   ];
+
+  const peopleSlides = [
+    {
+      title: "Life at TGPS Global",
+      description:
+        "Sustainability here isn't a poster on the wall; it's how decisions are made and lived every day.",
+      link: "/careers",
+      cta: "Explore careers",
+      image: Tgps1,
+      alt: "Life at TGPS Global",
+    },
+    {
+      title: "Our Ethos",
+      description:
+        "Values that guide decisions, not just words. Innovation isn't locked inside a department - it's a shared responsibility.",
+      link: "/careers",
+      cta: "See our culture",
+      image: Tgps2,
+      alt: "Our ethos",
+    },
+    {
+      title: "Work, Impact & Beyond",
+      description:
+        "Your work here shapes more than a career; every role connects to impact for communities, partners, and the planet.",
+      link: "/careers",
+      cta: "View opportunities",
+      image: Tgps3,
+      alt: "Work, impact and beyond",
+    },
+  ];
+
+  const [activePerson, setActivePerson] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActivePerson((prev) => (prev + 1) % peopleSlides.length);
+    }, 15000);
+
+    return () => clearInterval(timer);
+  }, [peopleSlides.length]);
+
+  const handlePrevPerson = () =>
+    setActivePerson((prev) => (prev - 1 + peopleSlides.length) % peopleSlides.length);
+
+  const handleNextPerson = () =>
+    setActivePerson((prev) => (prev + 1) % peopleSlides.length);
+
+  const currentSlide = peopleSlides[activePerson];
   return (
     <div>
 <section 
@@ -369,237 +417,74 @@ const Home = () => {
 
                         {/* PEOPLE ARE THE ENGINE */}
 
-           <div style={{ backgroundColor: "#FFFFFF",  }}>
+           <div className="people-engine-section">
       <div className="container py-5">
         {/* Heading Section */}
-        <div className="text-start mb-5" 
-       data-aos="fade-right"
-       data-aos-offset="300"
-       data-aos-easing="ease-in-sine">
-          <h1 className='text-center' style={{ fontWeight: 700, color: "#0032A0" }}>
+        <div
+          className="text-start mb-5"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <h1 className="text-center" style={{ fontWeight: 700, color: "#0032A0" }}>
             People are the engine of our success
           </h1>
           <p className="mt-3 text-center" style={{ color: "#0032A0", fontSize: "1.1rem" }}>
-            TGPS Global is not driven by hierarchy it’s driven by impact. Where purpose meets everyday work.
+            TGPS Global is not driven by hierarchy; it's driven by impact. Where purpose meets everyday work.
           </p>
         </div>
 
-        {/* Cards Section */}
-        <div className="row g-4">
-          {/*  Card---1 */}
-<div className="col-lg-4 col-md-12 d-flex justify-content-center "
-     data-aos="fade-up"
-     data-aos-duration="3000">
-  <div
-    className="card border-0 rounded-0"
-    style={{
-      overflow: "hidden",
-      backgroundColor: "#f9f9f9",
-      width: "90%",
-      maxWidth: "320px",
-    }}
-  >
-    {/* Image with Wave */}
-    <div style={{ position: "relative" }}>
-      <img
-        src={Tgps1}
-        alt="Sustainability"
-        className="img-fluid rounded-0 w-100"
-        style={{
-          height: "200px",
-          objectFit: "cover",
-        }}
-      />
+        <div className="people-card row g-0 align-items-center">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <div className="people-copy">
+              <p className="people-eyebrow">People first</p>
+              <h3 className="people-title">{currentSlide.title}</h3>
+              <p className="people-description">{currentSlide.description}</p>
+              <Link to={currentSlide.link} className="people-cta">
+                {currentSlide.cta}
+              </Link>
+            </div>
+          </div>
 
-      {/* Wave SVG */}
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          width: "100%",
-          height: "50px",
-        }}
-      >
-        <path
-          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style={{ fill: "#f9f9f9" }}
-        ></path>
-      </svg>
+          <div
+            className="col-lg-6"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <div className="people-image">
+              <img src={currentSlide.image} alt={currentSlide.alt} className="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+
+        <div className="people-dots d-flex justify-content-center gap-2 mt-4">
+          {peopleSlides.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              className={`people-dot ${index === activePerson ? "active" : ""}`}
+              aria-label={`Show story ${index + 1}`}
+              onClick={() => setActivePerson(index)}
+            />
+          ))}
+        </div>
+
+        <div className="people-nav d-flex justify-content-center gap-3 mt-3">
+          <button type="button" className="people-nav-btn" onClick={handlePrevPerson}>
+            ‹
+          </button>
+          <button type="button" className="people-nav-btn" onClick={handleNextPerson}>
+            ›
+          </button>
+        </div>
+      </div>
     </div>
-
-    <div className="card-body text-center">
-      <h5>
-        <a
-          href="#"
-          className="text-decoration-none"
-          style={{ color: "#0056d2", fontWeight: 700 }}
-        >
-          Life at TGPS Global
-        </a>
-      </h5>
-      <p style={{ color: "#555", fontSize: "1rem" }}>
-        Sustainability here isn’t a poster on the wall. It’s how decisions are made .....
-        <Link to="/careers">Readmore</Link>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-          {/*  Card ---2 */}
- <div className="col-lg-4 col-md-12 d-flex justify-content-center"
-     data-aos="fade-up"
-     data-aos-duration="3000">
-  <div
-    className="card border-0 rounded-0"
-    style={{
-      overflow: "hidden",
-      backgroundColor: "#f9f9f9",
-      width: "90%",
-      maxWidth: "320px",
-    }}
-  >
-    {/* Image with Wave */}
-    <div style={{ position: "relative" }}>
-      <img
-        src={Tgps2}
-        alt="Sustainability"
-        className="img-fluid rounded-0 w-100"
-        style={{
-          height: "200px",
-          objectFit: "cover",
-        }}
-      />
-
-      {/* Wave SVG */}
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          width: "100%",
-          height: "50px",
-        }}
-      >
-        <path
-          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style={{ fill: "#f9f9f9" }}
-        ></path>
-      </svg>
-    </div>
-
-    <div className="card-body text-center">
-      <h5>
-        <a
-          href="#"
-          className="text-decoration-none"
-          style={{ color: "#0056d2", fontWeight: 700 }}
-        >
-          Our Ethos
-        </a>
-      </h5>
-      <p style={{ color: "#555", fontSize: "1rem" }}>
-        Values that guide decisions, not just words. Innovation isn’t locked inside a department .....
-        <Link to="/careers">Readmore</Link>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-                        {/* CARD===3 */}
-           {/* <div className="col-lg-4 col-md-12 d-flex justify-content-center">
-  <div className="card border-0 rounded-0" style={{ borderRadius: "10px", overflow: "hidden", backgroundColor: "#f9f9f9", width: "90%", maxWidth: "320px" }}>
-    <img
-      src="https://images.pexels.com/photos/53135/hydrangea-blossom-bloom-flower-53135.jpeg"
-      alt="Sustainability"
-      className="img-fluid"
-    />
-    <div className="card-body text-center">
-      <h5>
-        <a
-          href="#"
-          className="text-decoration-none"
-          style={{ color: "#0056d2", fontWeight: 700 }}
-        >
-          lorem
-        </a>
-      </h5>
-      <p style={{ color: "#555", fontSize: "1rem" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        perspiciatis repellendus, quo commodi beatae et.
-      </p>
-    </div>
-  </div>
-</div> */}
-<div className="col-lg-4 col-md-12 d-flex justify-content-center"
-    data-aos="fade-up"
-     data-aos-duration="3000">
-  <div
-    className="card border-0 rounded-0"
-    style={{
-      overflow: "hidden",
-      backgroundColor: "#f9f9f9",
-      width: "90%",
-      maxWidth: "320px",
-    }}
-  >
-    {/* Image with Wave */}
-    <div style={{ position: "relative" }}>
-      <img
-        src={Tgps3}
-        alt="Sustainability"
-        className="img-fluid rounded-0 w-100"
-        style={{
-          height: "200px",
-          objectFit: "cover",
-        }}
-      />
-
-      {/* Wave SVG */}
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          width: "100%",
-          height: "50px",
-        }}
-      >
-        <path
-          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style={{ fill: "#f9f9f9" }}
-        ></path>
-      </svg>
-    </div>
-
-    <div className="card-body text-center">
-      <h5>
-        <a
-          href="#"
-          className="text-decoration-none"
-          style={{ color: "#0056d2", fontWeight: 700 }}
-        >
-          Work, Impact & Beyond
-        </a>
-      </h5>
-      <p style={{ color: "#555", fontSize: "1rem" }}>
-        Your work here shapes more than a career. But no role exists in isolation. Every .....
-        <Link to="/careers">Readmore</Link>
-      </p>
-    </div>
-  </div>
-  </div>
-  </div>
- </div>
-</div>
 
 <LatestNews />
      
@@ -643,4 +528,3 @@ const Home = () => {
 }
 
 export default Home
-

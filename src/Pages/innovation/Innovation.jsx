@@ -109,62 +109,64 @@ const InnovationHub = () => {
 
       {/* Bottom Card */}
       <div
-        className="card p-4 shadow-lg"
+        className="card p-4 shadow-lg future-card"
         style={{
           borderRadius: "20px",
           background: "linear-gradient(135deg, #f8f9fa, #e9ecef)",
+          overflow: "visible",
         }}
       >
-        <div className="row g-4">
+        <div className="row g-4 tracks-grid">
 
           {/* Row 1 */}
           <div className="col-md-6">
-            <div className="p-3 h-100 rounded-3 border border-light shadow-sm hover-effect">
+            <div className="p-3 h-100 rounded-3 border border-light track-card">
               <h5 className="fw-bold" style={{color:"#365FD5"}}>Clean Energy Futures</h5>
               <p>Our Clean Energy Futures track focuses on building planet-positive systems where sustainability and technology work hand in hand. Through solar innovation, net-zero missions, and advanced carbon reduction models, we design scalable energy solutions that reduce environmental impact while enabling long-term economic growth. This track is driven by the belief that responsible energy today defines a resilient tomorrow.</p>
-              <button className="btn text-white" style={{backgroundColor:"#06298A"}}
-              onClick={()=>setShowModal(true)}>Let's Explore</button>
             </div>
           </div>
 
           <div className="col-md-6">
-            <div className="p-3 h-100 rounded-3 border border-light shadow-sm hover-effect">
+            <div className="p-3 h-100 rounded-3 border border-light track-card">
               <h5 className="fw-bold" style={{color:"#365FD5"}}>Mobility 2.0</h5>
-              <p>Mobility 2.0 reimagines transportation across the entire ecosystem—from manufacturing floors to last-mile delivery. With a strong focus on EV manufacturing, intelligent charging networks, fleet automation, and zero-emission logistics, this track accelerates the shift toward cleaner, smarter, and more efficient mobility systems designed for future cities and industries.</p>
-              <button className="btn text-white" style={{backgroundColor:"#06298A"}}
-              onClick={()=>setShowModal(true)}>Let's Explore</button>
+              <p>Mobility 2.0 reimagines transportation across the entire ecosystem -from manufacturing floors to last-mile delivery. With a strong focus on EV manufacturing, intelligent charging networks, fleet automation, and zero-emission logistics, this track accelerates the shift toward cleaner, smarter, and more efficient mobility systems designed for future cities and industries.</p>
             </div>
             
           </div>
 
           {/* Row 2 */}
           <div className="col-md-6">
-            <div className="p-3 h-100 rounded-3 border border-light shadow-sm hover-effect">
+            <div className="p-3 h-100 rounded-3 border border-light track-card">
               <h5 className="fw-bold" style={{color:"#365FD5"}}>Decentralized World</h5>
-              <p>The Decentralized World track empowers industries through transparency, security, and digital independence. Anchored by Frequency Chain X, decentralized application development, DeMask for decentralized meetings, and Cliff Chat for secure communication, this ecosystem enables organizations to operate without centralized control—unlocking trust, resilience, and limitless digital freedom.</p>
-              <button className="btn text-white" style={{backgroundColor:"#06298A"}}
-              onClick={()=>setShowModal(true)}>Let's Explore</button>
+              <p>The Decentralized World track empowers industries through transparency, security, and digital independence. Anchored by Frequency Chain X, decentralized application development, DeMask for decentralized meetings, and Cliff Chat for secure communication, this ecosystem enables organizations to operate without centralized control -unlocking trust, resilience, and limitless digital freedom.</p>
             </div>
           </div>
 
           <div className="col-md-6">
-            <div className="p-3 h-100 rounded-3 border border-light shadow-sm hover-effect">
+            <div className="p-3 h-100 rounded-3 border border-light track-card">
               <h5 className="fw-bold" style={{color:"#365FD5"}}>Innovation Alliances</h5>
               <p>Innovation Alliances bring collaboration to the core of progress. Through college partnerships, startup collaborations, developer communities, and joint ventures with corporates, this track focuses on co-creating future-ready solutions. By uniting institutions, innovators, and enterprises, we transform ideas into impactful, real-world outcomes.</p>
-              <button className="btn text-white" style={{backgroundColor:"#06298A"}}
-              onClick={()=>setShowModal(true)}>Let's Explore</button>
             </div>
           </div>
 
         </div>
+        <div className="text-center mt-4">
+          <button
+            className="btn text-white px-4"
+            style={{ backgroundColor: "#06298A", borderRadius: "999px" }}
+            onClick={() => setShowModal(true)}
+          >
+            Let's Explore
+          </button>
+        </div>
       </div>
-    </div>                    
+    </div>
 
 
                             {/* SECTION -------4 */}
 
      <section className="container-fluid bg-white">
-                 <section className="container py-5 bg-white">
+                 <section className="container py-5 bg-white pipeline-section">
 
       {/* TOP HEADING */}
       <h1
@@ -184,7 +186,7 @@ const InnovationHub = () => {
       </p>
 
       {/* FOUR BOX ROW */}
-      <div className="row g-4">
+      <div className="row g-4 pipeline-row">
 
         {/* BOX 1 */}
         <div className="col-lg-3 col-md-6">
@@ -282,7 +284,7 @@ const InnovationHub = () => {
 
     <section className="container-fluid bg-white">
   
- <section className="container my-5 participation-zone">
+    <section className="container my-5 participation-zone participation-wrapper">
 
   {/* TOP HEADING */}
   <h1
@@ -302,7 +304,7 @@ const InnovationHub = () => {
   </p>
 
   {/* ALL ROWS WRAPPER */}
-  <div className="row justify-content-center g-4">
+  <div className="row justify-content-center g-4 participation-row">
 
     {/* ROW 1 */}
     <div className="col-lg-6 col-md-8">

@@ -14,10 +14,7 @@ const BlogPage = () => {
       <section className="blog-hero text-white d-flex align-items-center blog-page">
         <div className="container text-center">
           <h1 className="fw-bold">Our Insights & Stories</h1>
-          <p className="mt-3">
-            Premium articles on design, technology, sustainability, and
-            innovation.
-          </p>
+
         </div>
       </section>
 

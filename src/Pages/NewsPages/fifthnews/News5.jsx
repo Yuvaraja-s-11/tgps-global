@@ -7,18 +7,7 @@ const News5 = () => {
   return (
     <>
     <section className="IBM-font">
-      {/* ===== BREADCRUMB BAR ===== */}
-      <div className="breadcrumb-bar">
-        <div className="container-fluid py-2">
-          <Link to="/" className="text-white">
-          <span>
-            Home <span>▶</span> 
-            {/* All news stories <span>▶</span>{" "}
-            <strong>The science of fragrance, emotion, and self-confidence</strong> */}
-          </span>
-          </Link>
-        </div>
-      </div>
+
 
       {/* ===== MAIN SECTION ===== */}
      <section className="science-section">

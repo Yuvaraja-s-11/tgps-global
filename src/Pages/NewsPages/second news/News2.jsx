@@ -1,82 +1,63 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Link} from "react-router-dom"
-import EVCharge from '../../../assets/images/News/evcharge.jpeg'
+import { Link } from "react-router-dom";
+import EVCharge from "../../../assets/images/News/evcharge.jpeg";
 import "./News2.css";
 
 const News2 = () => {
   return (
     <>
-    <section className="IBM-font">
-      {/* BREADCRUMB BAR */}
-      <div className="breadcrumb-bar">
-        <div className="container py-2">
-          <Link to="/" className="text-white"><span style={{fontSize:"15px"}}>Home</span></Link>
-          <span>›</span>
-        </div>
-      </div>
+      <section className="IBM-font">
 
-      {/* HERO SECTION */}
-      <section className="press-hero">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
 
-              <h1 className="press-title">
-                Ponsana DAVID to Speak at EVCharge Live Thailand 2026 — Driving Conversation on EV Charging & Sustainable Mobilityṣ
-              </h1>
+        {/* HERO SECTION */}
+        <section className="press-hero">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10">
+                <div className="press-wrapper">
+                  <h1 className="press-title">
+                    Ponsana David to speak at EVCharge Live Thailand 2026 – driving conversation on EV charging and sustainable mobility
+                  </h1>
 
-              <div className="press-meta">
-                <span>Published: 28–29 January 2026</span>
-                <span className="dot">•</span>
-                {/* <span>Lorem ipsum dolor sit.</span> */}
+                  <div className="press-meta">
+                    <span>Published: 28–29 January 2026</span>
+                  </div>
+
+                    <p className="press-desc">
+                      Ponsana David, Chairperson of the Green Carpet Foundation and CEO of TGPS Global, has been invited as a featured speaker at EVCharge Live Thailand 2026. The two-day forum at BITEC, Bangkok brings together the region's leading voices on electric mobility and charging infrastructure.
+                    </p>
+
+                  <div className="press-image">
+                    <img src={EVCharge} alt="EVCharge Live Thailand 2026 event visual" />
+                  </div>
+
+                  <div className="press-content">
+                    <p>
+                      EVCharge Live Thailand 2026 convenes the full EV ecosystem—from policymakers and grid operators to technology providers and investors—to address the rapid evolution of charging infrastructure. Discussions focus on how reliable, scalable charging unlocks broader EV adoption across Thailand and the ASEAN region.
+                    </p>
+
+                    <p>
+                      Across two days, delegates will join interactive sessions, expert talks, product demos, and hands-on exhibits that dive into fast-charging tech, fleet and battery management, data platforms, business models, investment strategies, last-mile logistics, regulatory frameworks, and energy integration and maintenance.
+                    </p>
+
+                    <p>
+                      Ponsana David joins a global lineup of industry leaders to share perspectives on sustainable mobility, infrastructure development, and the power of multi-sector collaboration to build resilient, equitable transportation systems. Her participation underscores the Green Carpet Foundation's commitment to responsible innovation and partnerships that accelerate green technology adoption.
+                    </p>
+
+                    <p>
+                      With more than 150 expert speakers, EVCharge Live Thailand offers a platform to explore next-generation EV charging innovations, forge strategic dialogues, and shape the integration of future-ready solutions that meet the region's fast-growing demand.
+                    </p>
+
+                    <p>
+                      As Thailand expands its EV ecosystem—supported by public policy and private investment—forums like EVCharge Live Thailand are essential for sharing knowledge, highlighting emerging trends, and catalyzing collaboration across borders and industries.
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <p className="press-desc">
-                Ponsana DAVID, Chairman of the Green Carpet Foundation and CEO of TGPS Global, has been invited as a featured speaker at EVCharge Live Thailand 2026, one of Southeast Asia’s most influential events focused on electric vehicles (EVs) and charging infrastructure. The event will take place on 28–29 January 2026 at BITEC, Bangkok, Thailand. 
-Terrapinn
-              </p>
-
-              <div className="press-image">
-                <img
-                  src={EVCharge}
-                  alt="tgps-news"
-                  
-                />
-              </div>
-
-              <div className="press-content">
-                <p>
-                  EVCharge Live Thailand 2026 is a premier business-to-business exhibition and conference that brings together the entire EV ecosystem — from policymakers, industry leaders, and infrastructure developers to technology providers and investors. The event is designed to address the rapid evolution of electric mobility, particularly the charging infrastructure, which is considered a cornerstone for accelerating EV adoption across Thailand and the ASEAN region. 
-Terrapinn
-                </p>
-
-                <p>
-                  Over two days, the event will feature interactive sessions, expert presentations, product demonstrations, and networking opportunities aimed at advancing thought leadership and collaboration in the EV sector. Attendees will gain deep insights into key themes such as fast charging technology, fleet and battery management, data platforms, business models, investment strategies, last–mile logistics, regulatory frameworks, and emerging trends in energy integration and maintenance. 
-Terrapinn
-                </p>
-
-                <p>
-                  Ponsana David joins a distinguished lineup of global and regional industry speakers, contributing her perspective on sustainable mobility, infrastructure development, and the role of multi-sector collaboration in shaping resilient, equitable transportation ecosystems. Her participation highlights the Green Carpet Foundation’s ongoing commitment to promoting innovative, environmentally responsible solutions and fostering partnerships that support the growth of green technologies and infrastructure. 
-Terrapinn
-                </p>
-                    In addition to keynote talks and sessions, the event will host over 150 expert speakers, hands-on product demos, and exhibits, allowing delegates to explore the latest innovations driving the future of EV charging. Delegates will also have opportunities for networking and strategic dialogues, essential for forming partnerships that will influence the adoption and integration of next-generation EV technologies.Terrapinn
-                <p>
-                  As Thailand continues to build out its EV ecosystem — supported by government initiatives and private sector investment — platforms like EVCharge Live Thailand are pivotal for sharing knowledge, spotlighting emerging trends, and catalysing collaboration across borders and industries. 
-Terrapinn
-                </p>
-
-                <p>
-                  
-                </p>
-
-                <hr />
-              </div>
-
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </section>
     </>
   );

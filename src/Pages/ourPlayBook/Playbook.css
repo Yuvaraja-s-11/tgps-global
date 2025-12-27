@@ -42,6 +42,8 @@
 
 .playbook-row {
   margin-bottom: 80px;
+  row-gap: 20px;
+  overflow: visible;
 }
 
 /* TEXT */
@@ -75,22 +77,22 @@
 .ui-card {
   background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: visible;
 }
 
 /* PARAGRAPH BOX */
 .chat-box {
-  max-width: 85%;
+  width: 100%;
+  max-width: 540px;
   padding: 22px 26px;
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.9),
-    rgba(245,247,255,0.9)
-  );
+  background: #ffffff;
   border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-  transition: all 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 31, 130, 0.05), 0 22px 65px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
 }
 
 .chat-box span {
@@ -101,12 +103,8 @@
 
 /* HOVER */
 .ui-card:hover .chat-box {
-  transform: translateY(-6px);
-  background: linear-gradient(
-    135deg,
-    rgba(75,54,255,0.08),
-    rgba(0,31,130,0.08)
-  );
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 31, 130, 0.08), 0 30px 80px rgba(0, 0, 0, 0.1);
 }
 
 .ui-card:hover .chat-box span {

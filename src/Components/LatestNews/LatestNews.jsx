@@ -40,7 +40,7 @@ const LatestNews = () => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
               
-              <Link to="/news-sections">
+              <Link to="/news-sections" className="news-link-wrapper">
                 <div
                   className="card rounded-2 border-0 shadow-sm h-100"
                   style={{ overflow: "hidden" }}
@@ -52,10 +52,7 @@ const LatestNews = () => {
                   />
                   <div className="card-body left-card-bg">
                     <h5 className="card-title fw-bold mb-2">
-                      <p
-                        className="text-decoration text-white"
-                        style={{ cursor: "pointer" }}
-                      >
+                      <p className="news-link">
                        India’s Ethereum Has Arrived — Frequency Chain X Emerges as the Next-Gen Conscious Blockchain
                       </p>
                     </h5>
@@ -89,11 +86,10 @@ const LatestNews = () => {
       <div className="col-8">
         <div className="card-body p-2">
           <h6 className="fw-semibold mb-1">
-           <Link to="/news-sections-2">
+           <Link to="/news-sections-2" className="news-link-wrapper">
             <p
-              href="#"
-              className="text-decoration-none text-white"
-              style={{ cursor: "pointer", fontSize: "0.95rem" }}
+              className="news-link"
+              style={{ fontSize: "0.95rem" }}
             >
               Ponsana DAVID to Speak at EVCharge Live Thailand 2026 — Driving Conversation on EV Charging & Sustainable Mobility.
             </p>
@@ -118,11 +114,10 @@ const LatestNews = () => {
       <div className="col-8">
         <div className="card-body p-2">
           <h6 className="fw-semibold mb-1">
-           <Link to="/news-sections-3">
+           <Link to="/news-sections-3" className="news-link-wrapper">
             <p
-              href="#"
-              className="text-decoration-none text-white"
-              style={{ cursor: "pointer", fontSize: "0.95rem" }}
+              className="news-link"
+              style={{ fontSize: "0.95rem" }}
             >
               MK Visionary Awards 2025: Empowering Young Minds Through Scholarships, Creativity, and Opportunity
             </p>
@@ -147,11 +142,10 @@ const LatestNews = () => {
       <div className="col-8">
         <div className="card-body p-2">
           <h6 className="fw-semibold mb-1">
-           <Link to="/news-sections-4">
+           <Link to="/news-sections-4" className="news-link-wrapper">
             <p
-              href="#"
-              className="text-decoration-none text-white"
-              style={{ cursor: "pointer", fontSize: "0.95rem" }}
+              className="news-link"
+              style={{ fontSize: "0.95rem" }}
             >
               Green Carpet Foundation Champions Inclusion Through Para Cricket Sponsorship in Coimbatore
             </p>
@@ -176,10 +170,10 @@ const LatestNews = () => {
       <div className="col-8">
         <div className="card-body p-2">
           <h6 className="fw-semibold mb-1">
-            <Link to="/news-sections-5">
+            <Link to="/news-sections-5" className="news-link-wrapper">
             <p
-              className="text-decoration text-white"
-              style={{ cursor: "pointer", fontSize: "0.95rem" }}
+              className="news-link"
+              style={{ fontSize: "0.95rem" }}
             >
               
               CEO Ponsana Flags Child Safety Concerns on Quick-Commerce Apps, Industry Responds
